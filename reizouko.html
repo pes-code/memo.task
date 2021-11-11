@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冷蔵庫の管理人さん</title>
+    <link rel="stylesheet" href="css/reizouko.css">
+</head>
+
+<body>
+    <header>
+        <div class=""></div>
+    </header>
+
+    <main>
+        <div class="icon_box">
+            <div class="icon_box_1">
+                <input type="image" src="img/potato.png" value="ジャガイモ" id="potato">
+                <p id="message"></p>
+                <input type="button" value="" id="clear1">
+                <input type="image" src="img/squash.png" value="カボチャ" id="squash">
+                <p id="message"></p>
+                <input type="button" value="" id="clear2">
+                <input type="image" src="img/sweet_potato.jpg" value="さつまいも" id="sweet_potato">
+                <p id="message"></p>
+                <input type="button" value="" id="clear3">
+            </div>
+            <div class="icon_box_2">
+                <input type="image" src="img/burdock.jpg" value="ごぼう" id="burdock">
+                <p id="message"></p>
+                <input type="button" value="" id="clear4">
+                <input type="image" src="img/carrot.png" value="にんじん" id="carrot">
+                <p id="message"></p>
+                <input type="button" value="" id="clear5">
+                <input type="image" src="img/onion.png" value="タマネギ" id="onion">
+                <p id="message"></p>
+                <input type="button" value="" id="clear6">
+            </div>
+            <div class="icon_box_3">
+                <input type="image" src="img/tometo.png" value="トマト" id="tometo">
+                <p id="message"></p>
+                <input type="button" value="" id="clear7">
+                <input type="image" src="img/cucunber.png" value="きゅうり" id="cucunber">
+                <p id="message"></p>
+                <input type="button" value="" id="clear8">
+                <input type="image" src="img/green_pepper.jpg" value="ピーマン" id="green_pepper">
+                <p id="message"></p>
+                <input type="button" value="" id="clear9">
+            </div>
+            <div class="icon_box_4">
+                <input type="image" src="img/chinese_cabbage.jpg" value="白菜" id="chinese_cabbage">
+                <p id="message"></p>
+                <input type="button" value="" id="clear10">
+                <input type="image" src="img/cabbage.png" value="キャベツ" id="cabbage">
+                <p id="message"></p>
+                <input type="button" value="" id="clear11">
+                <input type="image" src="img/lettuce.png" value="レタス" id="lettuce">
+                <p id="message"></p>
+                <input type="button" value="" id="clear12">
+            </div>
+            <div class="icon_box_5">
+                <input type="image" src="img/egg.jpg" value="たまご" id="egg">
+                <p id="message"></p>
+                <input type="button" value="" id="clear13">
+                <input type="image" src="img/tofu.jpg" value="豆腐" id="tofu">
+                <p id="message"></p>
+                <input type="button" value="" id="clear14">
+                <input type="image" src="img/natto.jpg" value="納豆" id="natto">
+                <p id="message"></p>
+                <input type="button" value="" id="clear15">
+            </div>
+            <div class="icon_box_6">
+                <input type="image" src="img/milk.jpg" value="牛乳" id="milk">
+                <p id="message"></p>
+                <input type="button" value="" id="clear16">
+                <input type="image" src="img/yogurt.png" value="ヨーグルト" id="yogurt">
+                <p id="message"></p>
+                <input type="button" value="" id="clear17">
+                <input type="image" src="img/preserved_food.jpg" value="災害時保存食" id="preserved_food">
+                <p id="message"></p>
+                <input type="button" value="" id="clear18">
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        //アイコンを押すとローカルストレージに"SOS"というテキストが保存される。
+        //一定期間経過すると自動的にローカルストレージから"SOS"が返ってくる。
+        //返ってきた"SOS"が各アイコンの横(or下)に表示される
+        //各アイコン下の"clear"ボタンを押すと該当するデータがクリアされる。
+
+        //保存処理
+        $("#potato").on("click", function () {
+            const data = {
+                shelf_life0: $("#potato").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#squash").on("click", function () {
+            const data = {
+                shelf_life0: $("#squash").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#sweet_potato").on("click", function () {
+            const data = {
+                shelf_life0: $("#sweet_potato").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#burdock").on("click", function () {
+            const data = {
+                shelf_life0: $("#burdock").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#carrot").on("click", function () {
+            const data = {
+                shelf_life0: $("#carrot").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#onion").on("click", function () {
+            const data = {
+                shelf_life0: $("#onion").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#tometo").on("click", function () {
+            const data = {
+                shelf_life0: $("#tometo").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#cucunber").on("click", function () {
+            const data = {
+                shelf_life0: $("#cucunber").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#green_pepper").on("click", function () {
+            const data = {
+                shelf_life0: $("#green_pepper").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#chinese_cabbage").on("click", function () {
+            const data = {
+                shelf_life0: $("#chinese_cabbage").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#cabbage").on("click", function () {
+            const data = {
+                shelf_life0: $("#cabbage").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#lettuce").on("click", function () {
+            const data = {
+                shelf_life0: $("#lettuce").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#egg").on("click", function () {
+            const data = {
+                shelf_life0: $("#egg").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#tofu").on("click", function () {
+            const data = {
+                shelf_life0: $("#tofu").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#natto").on("click", function () {
+            const data = {
+                shelf_life0: $("#natto").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#milk").on("click", function () {
+            const data = {
+                shelf_life0: $("#milk").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#yogurt").on("click", function () {
+            const data = {
+                shelf_life0: $("#yogurt").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+        $("#preserved_food").on("click", function () {
+            const data = {
+                shelf_life0: $("#preserved_food").val(),
+                text: $("#message").val("SOS!!")
+            };
+            console.log(data);
+            const jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            localStorage.setItem("memo", jsonData);
+        });
+
+        //$("#potato").on("click", function () {
+        //const potato = $("#potato").val();
+        //console.log(potato);
+        //localStorage.setItem("shelf_life", potato);
+        //});
+
+        //削除処理
+
+        $("#clear1").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life0").val("");
+            $("#text").val("")
+        });
+
+        $("#clear2").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life1").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear3").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life2").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear4").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life3").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear5").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life4").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear6").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life5").val("");
+            $("#text").val("")
+        });
+
+        $("#clear7").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life6").val("");
+            $("#text").val("")
+        });
+
+        $("#clear8").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life7").val("");
+            $("#text").val("")
+        });
+
+        $("#clear9").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life8").val("");
+            $("#text").val("")
+        });
+
+        $("#clear10").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life9").val("");
+            $("#text").val("")
+        });
+
+        $("#clear11").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life10").val("");
+            $("#text").val("")
+        });
+
+        $("#clear12").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life11").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear13").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life12").val("");
+            $("#text").val("")
+        });
+
+
+        $("#clear14").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life13").val("");
+            $("#text").val("")
+        });
+
+        $("#clear15").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life14").val("");
+            $("#text").val("")
+        });
+
+        $("#clear16").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life15").val("");
+            $("#text").val("")
+        });
+
+        $("#clear17").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life16").val("");
+            $("#text").val("")
+        });
+
+        $("#clear18").on("click", function () {
+            localStorage.removeItem("memo");
+            $("#shelf_life17").val("");
+            $("#text").val("")
+        });
+
+        //取得処理
+        //ifの部分に期日が近づいたら｛｝内の処理がされるようにコードを書く。
+        if (localStorage.getItem("memo")) {
+            const jsonData = localStorage.getItem("memo");
+            console.log(jsonData);
+            const data = JSON.parse(jsonData);
+            console.log(data);
+            //⇓期日が近づいたら表示されるようにする。
+            //$("#potato").val(data.shelf_life);
+            $("#message").val(data.text);
+        }
+
+//const data = {
+//sos: $("#potato").val()
+//『食材の名前』がピンチ！！と出力されるようにする
+//};
+//const jsonData = JSON.stringify(data);
+//console.log(jsonData);
+//localStorage.setItem("shelf_life", jsonData);
+//});
+
+    </script>
+
+
+</body>
+
+</html>
