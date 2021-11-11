@@ -11,74 +11,81 @@
 
 <body>
     <header>
-        <div class=""></div>
+        <div class="title_box">
+            <div class="title_logo">
+                <img src="img/security.png">
+            </div>
+            <div class="title_text">
+                <h1>冷蔵庫の守衛さん</h1>
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="icon_box">
             <div class="icon_box_1">
-                <input type="image" src="img/potato.png" value="ジャガイモ" id="potato">
+                <input type="image" src="img/potato.png" value="SOS" id="potato">
                 <p id="message"></p>
                 <input type="button" value="" id="clear1">
-                <input type="image" src="img/squash.png" value="カボチャ" id="squash">
+                <input type="image" src="img/squash.png" value="SOS" id="squash">
                 <p id="message"></p>
                 <input type="button" value="" id="clear2">
-                <input type="image" src="img/sweet_potato.jpg" value="さつまいも" id="sweet_potato">
+                <input type="image" src="img/sweet_potato.jpg" value="SOS" id="sweet_potato">
                 <p id="message"></p>
                 <input type="button" value="" id="clear3">
             </div>
             <div class="icon_box_2">
-                <input type="image" src="img/burdock.jpg" value="ごぼう" id="burdock">
+                <input type="image" src="img/burdock.jpg" value="SOS" id="burdock">
                 <p id="message"></p>
                 <input type="button" value="" id="clear4">
-                <input type="image" src="img/carrot.png" value="にんじん" id="carrot">
+                <input type="image" src="img/carrot.png" value="SOS" id="carrot">
                 <p id="message"></p>
                 <input type="button" value="" id="clear5">
-                <input type="image" src="img/onion.png" value="タマネギ" id="onion">
+                <input type="image" src="img/onion.png" value="SOS" id="onion">
                 <p id="message"></p>
                 <input type="button" value="" id="clear6">
             </div>
             <div class="icon_box_3">
-                <input type="image" src="img/tometo.png" value="トマト" id="tometo">
+                <input type="image" src="img/tometo.png" value="SOS" id="tometo">
                 <p id="message"></p>
                 <input type="button" value="" id="clear7">
-                <input type="image" src="img/cucunber.png" value="きゅうり" id="cucunber">
+                <input type="image" src="img/cucunber.png" value="SOS" id="cucunber">
                 <p id="message"></p>
                 <input type="button" value="" id="clear8">
-                <input type="image" src="img/green_pepper.jpg" value="ピーマン" id="green_pepper">
+                <input type="image" src="img/green_pepper.jpg" value="SOS" id="green_pepper">
                 <p id="message"></p>
                 <input type="button" value="" id="clear9">
             </div>
             <div class="icon_box_4">
-                <input type="image" src="img/chinese_cabbage.jpg" value="白菜" id="chinese_cabbage">
+                <input type="image" src="img/chinese_cabbage.jpg" value="SOS" id="chinese_cabbage">
                 <p id="message"></p>
                 <input type="button" value="" id="clear10">
-                <input type="image" src="img/cabbage.png" value="キャベツ" id="cabbage">
+                <input type="image" src="img/cabbage.png" value="SOS" id="cabbage">
                 <p id="message"></p>
                 <input type="button" value="" id="clear11">
-                <input type="image" src="img/lettuce.png" value="レタス" id="lettuce">
+                <input type="image" src="img/lettuce.png" value="SOS" id="lettuce">
                 <p id="message"></p>
                 <input type="button" value="" id="clear12">
             </div>
             <div class="icon_box_5">
-                <input type="image" src="img/egg.jpg" value="たまご" id="egg">
+                <input type="image" src="img/egg.jpg" value="SOS" id="egg">
                 <p id="message"></p>
                 <input type="button" value="" id="clear13">
-                <input type="image" src="img/tofu.jpg" value="豆腐" id="tofu">
+                <input type="image" src="img/tofu.jpg" value="SOS" id="tofu">
                 <p id="message"></p>
                 <input type="button" value="" id="clear14">
-                <input type="image" src="img/natto.jpg" value="納豆" id="natto">
+                <input type="image" src="img/natto.jpg" value="SOS" id="natto">
                 <p id="message"></p>
                 <input type="button" value="" id="clear15">
             </div>
             <div class="icon_box_6">
-                <input type="image" src="img/milk.jpg" value="牛乳" id="milk">
+                <input type="image" src="img/milk.jpg" value="SOS" id="milk">
                 <p id="message"></p>
                 <input type="button" value="" id="clear16">
-                <input type="image" src="img/yogurt.png" value="ヨーグルト" id="yogurt">
+                <input type="image" src="img/yogurt.png" value="SOS" id="yogurt">
                 <p id="message"></p>
                 <input type="button" value="" id="clear17">
-                <input type="image" src="img/preserved_food.jpg" value="災害時保存食" id="preserved_food">
+                <input type="image" src="img/preserved_food.jpg" value="SOS" id="preserved_food">
                 <p id="message"></p>
                 <input type="button" value="" id="clear18">
             </div>
@@ -96,8 +103,7 @@
         //保存処理
         $("#potato").on("click", function () {
             const data = {
-                shelf_life0: $("#potato").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life0: $("#potato").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -106,8 +112,7 @@
         });
         $("#squash").on("click", function () {
             const data = {
-                shelf_life0: $("#squash").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life1: $("#squash").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -116,8 +121,7 @@
         });
         $("#sweet_potato").on("click", function () {
             const data = {
-                shelf_life0: $("#sweet_potato").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life2: $("#sweet_potato").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -126,8 +130,7 @@
         });
         $("#burdock").on("click", function () {
             const data = {
-                shelf_life0: $("#burdock").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life3: $("#burdock").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -136,8 +139,7 @@
         });
         $("#carrot").on("click", function () {
             const data = {
-                shelf_life0: $("#carrot").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life4: $("#carrot").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -146,8 +148,7 @@
         });
         $("#onion").on("click", function () {
             const data = {
-                shelf_life0: $("#onion").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life5: $("#onion").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -156,8 +157,7 @@
         });
         $("#tometo").on("click", function () {
             const data = {
-                shelf_life0: $("#tometo").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life6: $("#tometo").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -166,8 +166,7 @@
         });
         $("#cucunber").on("click", function () {
             const data = {
-                shelf_life0: $("#cucunber").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life7: $("#cucunber").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -176,8 +175,7 @@
         });
         $("#green_pepper").on("click", function () {
             const data = {
-                shelf_life0: $("#green_pepper").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life8: $("#green_pepper").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -186,8 +184,7 @@
         });
         $("#chinese_cabbage").on("click", function () {
             const data = {
-                shelf_life0: $("#chinese_cabbage").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life9: $("#chinese_cabbage").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -196,8 +193,7 @@
         });
         $("#cabbage").on("click", function () {
             const data = {
-                shelf_life0: $("#cabbage").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life10: $("#cabbage").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -206,8 +202,7 @@
         });
         $("#lettuce").on("click", function () {
             const data = {
-                shelf_life0: $("#lettuce").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life11: $("#lettuce").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -216,8 +211,7 @@
         });
         $("#egg").on("click", function () {
             const data = {
-                shelf_life0: $("#egg").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life12: $("#egg").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -226,8 +220,7 @@
         });
         $("#tofu").on("click", function () {
             const data = {
-                shelf_life0: $("#tofu").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life13: $("#tofu").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -236,8 +229,7 @@
         });
         $("#natto").on("click", function () {
             const data = {
-                shelf_life0: $("#natto").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life14: $("#natto").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -246,8 +238,7 @@
         });
         $("#milk").on("click", function () {
             const data = {
-                shelf_life0: $("#milk").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life15: $("#milk").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -256,8 +247,7 @@
         });
         $("#yogurt").on("click", function () {
             const data = {
-                shelf_life0: $("#yogurt").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life16: $("#yogurt").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -266,8 +256,7 @@
         });
         $("#preserved_food").on("click", function () {
             const data = {
-                shelf_life0: $("#preserved_food").val(),
-                text: $("#message").val("SOS!!")
+                shelf_life17: $("#preserved_food").val()
             };
             console.log(data);
             const jsonData = JSON.stringify(data);
@@ -398,6 +387,7 @@
         });
 
         //取得処理
+
         //ifの部分に期日が近づいたら｛｝内の処理がされるようにコードを書く。
         if (localStorage.getItem("memo")) {
             const jsonData = localStorage.getItem("memo");
@@ -405,9 +395,24 @@
             const data = JSON.parse(jsonData);
             console.log(data);
             //⇓期日が近づいたら表示されるようにする。
-            //$("#potato").val(data.shelf_life);
-            $("#message").val(data.text);
+            $("#potato").val(data.shelf_life0);
+
         }
+
+        ///////////////////////////////////////////////////////
+        //if　ローカルストレージにデータが保存されていた場合は○○秒後に"SOS"が表示される。
+      //  if (localStorage.getItem("memo") && setTimeout(function, 5000() {
+      //      const jsonData = localStorage.getItem("memo");
+      //      console.log(jsonData);
+      //      const data = JSON.parse(jsonData);
+      //      console.log(data);
+            //⇓期日が近づいたら表示されるようにする。
+            //$("#potato").val(data.shelf_life);
+      //      $("#message").val(data.text);
+      //  });
+
+
+
 
 //const data = {
 //sos: $("#potato").val()
