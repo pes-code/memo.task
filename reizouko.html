@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>冷蔵庫のSecurityService</title>
+    <title>冷蔵庫BOUNCER</title>
     <link rel="stylesheet" href="css/reizouko.css">
 </head>
 
@@ -13,82 +13,127 @@
     <header>
         <div class="title_box">
             <div class="title_logo">
-                <img src="img/security.png">
+                <img src="img/Security_01.jpg">
             </div>
             <div class="title_text">
-                <h1>冷蔵庫のSecurityService</h1>
+                <h3>冷蔵庫BOUNCER</h3>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="icon_box">
+        <div class="icon_container_1">
             <div class="icon_box">
-                <div class="icon_box_1">
-                    <input type="image" src="img/potato.png" value="SOS" id="potato">
-                    <p id="message0"></p>
-                    <input type="button" value="" id="clear1">
-                    <input type="image" src="img/squash.png" value="SOS" id="squash">
-                    <p id="message1"></p>
-                    <input type="button" value="" id="clear2">
-                    <input type="image" src="img/sweet_potato.jpg" value="SOS" id="sweet_potato">
-                    <p id="message2"></p>
-                    <input type="button" value="" id="clear3">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/potato.png" value="SOS" id="potato">
+                    <p class="message" id="message0"></p>
+                    <input class="clear" type="button" value="" id="clear1">
                 </div>
-                <div class="icon_box_2">
-                    <input type="image" src="img/burdock.jpg" value="SOS" id="burdock">
-                    <p id="message3"></p>
-                    <input type="button" value="" id="clear4">
-                    <input type="image" src="img/carrot.png" value="SOS" id="carrot">
-                    <p id="message4"></p>
-                    <input type="button" value="" id="clear5">
-                    <input type="image" src="img/onion.png" value="SOS" id="onion">
-                    <p id="message5"></p>
-                    <input type="button" value="" id="clear6">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/squash.png" value="SOS" id="squash">
+                    <p class="message" id="message1"></p>
+                    <input class="clear" type="button" value="" id="clear2">
                 </div>
-                <div class="icon_box_3">
-                    <input type="image" src="img/tometo.png" value="SOS" id="tometo">
-                    <p id="message6"></p>
-                    <input type="button" value="" id="clear7">
-                    <input type="image" src="img/cucunber.png" value="SOS" id="cucunber">
-                    <p id="message7"></p>
-                    <input type="button" value="" id="clear8">
-                    <input type="image" src="img/green_pepper.jpg" value="SOS" id="green_pepper">
-                    <p id="message8"></p>
-                    <input type="button" value="" id="clear9">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/sweet_potato.jpg" value="SOS" id="sweet_potato">
+                    <p class="message" id="message2"></p>
+                    <input class="clear" type="button" value="" id="clear3">
                 </div>
-                <div class="icon_box_4">
-                    <input type="image" src="img/chinese_cabbage.jpg" value="SOS" id="chinese_cabbage">
-                    <p id="message9"></p>
-                    <input type="button" value="" id="clear10">
-                    <input type="image" src="img/cabbage.png" value="SOS" id="cabbage">
-                    <p id="message10"></p>
-                    <input type="button" value="" id="clear11">
-                    <input type="image" src="img/lettuce.png" value="SOS" id="lettuce">
-                    <p id="message11"></p>
-                    <input type="button" value="" id="clear12">
+            </div>
+        </div>
+        <div class="icon_container_2">
+            <div class="icon_box">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/burdock.jpg" value="SOS" id="burdock">
+                    <p class="message" id="message3"></p>
+                    <input class="clear" type="button" value="" id="clear4">
                 </div>
-                <div class="icon_box_5">
-                    <input type="image" src="img/egg.jpg" value="SOS" id="egg">
-                    <p id="message12"></p>
-                    <input type="button" value="" id="clear13">
-                    <input type="image" src="img/tofu.jpg" value="SOS" id="tofu">
-                    <p id="message13"></p>
-                    <input type="button" value="" id="clear14">
-                    <input type="image" src="img/natto.jpg" value="SOS" id="natto">
-                    <p id="message14"></p>
-                    <input type="button" value="" id="clear15">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/carrot.png" value="SOS" id="carrot">
+                    <p class="message" id="message4"></p>
+                    <input class="clear" type="button" value="" id="clear5">
                 </div>
-                <div class="icon_box_6">
-                    <input type="image" src="img/milk.jpg" value="SOS" id="milk">
-                    <p id="message15"></p>
-                    <input type="button" value="" id="clear16">
-                    <input type="image" src="img/yogurt.png" value="SOS" id="yogurt">
-                    <p id="message16"></p>
-                    <input type="button" value="" id="clear17">
-                    <input type="image" src="img/preserved_food.jpg" value="SOS" id="preserved_food">
-                    <p id="message17"></p>
-                    <input type="button" value="" id="clear18">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/onion.png" value="SOS" id="onion">
+                    <p class="message" id="message5"></p>
+                    <input class="clear" type="button" value="" id="clear6">
+                </div>
+            </div>
+        </div>
+        <div class="icon_container_3">
+            <div class="icon_box">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/tometo.png" value="SOS" id="tometo">
+                    <p class="message" id="message6"></p>
+                    <input class="clear" type="button" value="" id="clear7">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/cucunber.png" value="SOS" id="cucunber">
+                    <p class="message" id="message7"></p>
+                    <input class="clear" type="button" value="" id="clear8">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/green_pepper.jpg" value="SOS" id="green_pepper">
+                    <p class="message" id="message8"></p>
+                    <input class="clear" type="button" value="" id="clear9">
+                </div>
+            </div>
+        </div>
+
+        <div class="icon_container_4">
+            <div class="icon_box">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/chinese_cabbage.jpg" value="SOS" id="chinese_cabbage">
+                    <p class="message" id="message9"></p>
+                    <input class="clear" type="button" value="" id="clear10">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/cabbage.png" value="SOS" id="cabbage">
+                    <p class="message" id="message10"></p>
+                    <input class="clear" type="button" value="" id="clear11">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/lettuce.png" value="SOS" id="lettuce">
+                    <p class="message" id="message11"></p>
+                    <input class="clear" type="button" value="" id="clear12">
+                </div>
+            </div>
+        </div>
+        <div class="icon_container_5">
+            <div class="icon_box">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/egg.jpg" value="SOS" id="egg">
+                    <p class="message" id="message12"></p>
+                    <input class="clear" type="button" value="" id="clear13">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/tofu.jpg" value="SOS" id="tofu">
+                    <p class="message" id="message13"></p>
+                    <input class="clear" type="button" value="" id="clear14">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/natto.jpg" value="SOS" id="natto">
+                    <p class="message" id="message14"></p>
+                    <input class="clear" type="button" value="" id="clear15">
+                </div>
+            </div>
+        </div>
+        <div class="icon_container_6">
+            <div class="icon_box">
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/milk.jpg" value="SOS" id="milk">
+                    <p class="message" id="message15"></p>
+                    <input class="clear" type="button" value="" id="clear16">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/yogurt.png" value="SOS" id="yogurt">
+                    <p class="message" id="message16"></p>
+                    <input class="clear" type="button" value="" id="clear17">
+                </div>
+                <div class="icon_set">
+                    <input class="img" type="image" src="img/preserved_food.jpg" value="SOS" id="preserved_food">
+                    <p class="message" id="message17"></p>
+                    <input class="clear" type="button" value="" id="clear18">
                 </div>
             </div>
         </div>
