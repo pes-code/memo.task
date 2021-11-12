@@ -157,7 +157,16 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo1", jsonData);
-
+            //取得処理
+            if (localStorage.getItem("memo1")) {
+                const jsonData = localStorage.getItem("memo1");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message0").text(data.shelf_life0)
+                }, 3000);
+            };
         });
         $("#squash").on("click", function () {
             const data = {
@@ -167,6 +176,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo2", jsonData);
+            if (localStorage.getItem("memo2")) {
+                const jsonData = localStorage.getItem("memo2");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message1").text(data.shelf_life1)
+                }, 5000);
+            };
         });
         $("#sweet_potato").on("click", function () {
             const data = {
@@ -176,6 +194,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo3", jsonData);
+            if (localStorage.getItem("memo3")) {
+                const jsonData = localStorage.getItem("memo3");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message2").text(data.shelf_life2)
+                }, 1000);
+            };
         });
         $("#burdock").on("click", function () {
             const data = {
@@ -185,6 +212,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo4", jsonData);
+            if (localStorage.getItem("memo4")) {
+                const jsonData = localStorage.getItem("memo4");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message3").text(data.shelf_life3)
+                }, 7000);
+            };
         });
         $("#carrot").on("click", function () {
             const data = {
@@ -194,6 +230,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo5", jsonData);
+            if (localStorage.getItem("memo5")) {
+                const jsonData = localStorage.getItem("memo5");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message4").text(data.shelf_life4)
+                }, 2000);
+            };
         });
         $("#onion").on("click", function () {
             const data = {
@@ -203,6 +248,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo6", jsonData);
+            if (localStorage.getItem("memo6")) {
+                const jsonData = localStorage.getItem("memo6");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message5").text(data.shelf_life5)
+                }, 5000);
+            };
         });
         $("#tometo").on("click", function () {
             const data = {
@@ -212,6 +266,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo7", jsonData);
+            if (localStorage.getItem("memo7")) {
+                const jsonData = localStorage.getItem("memo7");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message6").text(data.shelf_life6)
+                }, 1000);
+            };
         });
         $("#cucunber").on("click", function () {
             const data = {
@@ -221,6 +284,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo8", jsonData);
+            if (localStorage.getItem("memo8")) {
+                const jsonData = localStorage.getItem("memo8");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message7").text(data.shelf_life7)
+                }, 3000);
+            };
         });
         $("#green_pepper").on("click", function () {
             const data = {
@@ -230,6 +302,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo9", jsonData);
+            if (localStorage.getItem("memo9")) {
+                const jsonData = localStorage.getItem("memo9");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message8").text(data.shelf_life8)
+                }, 3000);
+            };
         });
         $("#chinese_cabbage").on("click", function () {
             const data = {
@@ -239,6 +320,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo10", jsonData);
+            if (localStorage.getItem("memo10")) {
+                const jsonData = localStorage.getItem("memo10");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message9").text(data.shelf_life9)
+                }, 3000);
+            };
         });
         $("#cabbage").on("click", function () {
             const data = {
@@ -248,6 +338,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo11", jsonData);
+            if (localStorage.getItem("memo11")) {
+                const jsonData = localStorage.getItem("memo11");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message10").text(data.shelf_life10)
+                }, 3000);
+            };
         });
         $("#lettuce").on("click", function () {
             const data = {
@@ -257,6 +356,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo12", jsonData);
+            if (localStorage.getItem("memo12")) {
+                const jsonData = localStorage.getItem("memo12");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message11").text(data.shelf_life11)
+                }, 3000);
+            };
         });
         $("#egg").on("click", function () {
             const data = {
@@ -266,6 +374,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo13", jsonData);
+            if (localStorage.getItem("memo13")) {
+                const jsonData = localStorage.getItem("memo13");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message12").text(data.shelf_life12)
+                }, 3000);
+            };
         });
         $("#tofu").on("click", function () {
             const data = {
@@ -275,6 +392,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo14", jsonData);
+            if (localStorage.getItem("memo14")) {
+                const jsonData = localStorage.getItem("memo14");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message13").text(data.shelf_life13)
+                }, 3000);
+            };
         });
         $("#natto").on("click", function () {
             const data = {
@@ -284,6 +410,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo15", jsonData);
+            if (localStorage.getItem("memo15")) {
+                const jsonData = localStorage.getItem("memo15");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message14").text(data.shelf_life14)
+                }, 3000);
+            };
         });
         $("#milk").on("click", function () {
             const data = {
@@ -293,6 +428,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo16", jsonData);
+            if (localStorage.getItem("memo16")) {
+                const jsonData = localStorage.getItem("memo16");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message15").text(data.shelf_life15)
+                }, 3000);
+            };
         });
         $("#yogurt").on("click", function () {
             const data = {
@@ -302,6 +446,15 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo17", jsonData);
+            if (localStorage.getItem("memo17")) {
+                const jsonData = localStorage.getItem("memo17");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message16").text(data.shelf_life16)
+                }, 3000);
+            };
         });
         $("#preserved_food").on("click", function () {
             const data = {
@@ -311,6 +464,16 @@
             const jsonData = JSON.stringify(data);
             console.log(jsonData);
             localStorage.setItem("memo18", jsonData);
+            if (localStorage.getItem("memo18")) {
+                const jsonData = localStorage.getItem("memo18");
+                console.log(jsonData);
+                const data = JSON.parse(jsonData);
+                console.log(data);
+                setTimeout(function () {
+                    $("#message17").text(data.shelf_life17)
+                }, 3000);
+            };
+
         });
 
         //$("#potato").on("click", function () {
@@ -415,172 +578,6 @@
             localStorage.removeItem("memo18");
             $("#shelf_life17").val("");
         });
-
-        //取得処理
-
-        //ifの部分に期日が近づいたら｛｝内の処理がされるようにコードを書く。
-        if (localStorage.getItem("memo1")) {
-            const jsonData = localStorage.getItem("memo1");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message0").text(data.shelf_life0)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo2")) {
-            const jsonData = localStorage.getItem("memo2");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message1").text(data.shelf_life1)
-            }, 5000);
-        };
-        if (localStorage.getItem("memo3")) {
-            const jsonData = localStorage.getItem("memo3");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message2").text(data.shelf_life2)
-            }, 1000);
-        };
-        if (localStorage.getItem("memo4")) {
-            const jsonData = localStorage.getItem("memo4");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message3").text(data.shelf_life3)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo5")) {
-            const jsonData = localStorage.getItem("memo5");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message4").text(data.shelf_life4)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo6")) {
-            const jsonData = localStorage.getItem("memo6");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message5").text(data.shelf_life5)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo7")) {
-            const jsonData = localStorage.getItem("memo7");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message6").text(data.shelf_life6)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo8")) {
-            const jsonData = localStorage.getItem("memo8");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message7").text(data.shelf_life7)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo9")) {
-            const jsonData = localStorage.getItem("memo9");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message8").text(data.shelf_life8)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo10")) {
-            const jsonData = localStorage.getItem("memo10");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message9").text(data.shelf_life9)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo11")) {
-            const jsonData = localStorage.getItem("memo11");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message10").text(data.shelf_life10)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo12")) {
-            const jsonData = localStorage.getItem("memo12");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message11").text(data.shelf_life11)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo13")) {
-            const jsonData = localStorage.getItem("memo13");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message12").text(data.shelf_life12)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo14")) {
-            const jsonData = localStorage.getItem("memo14");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message13").text(data.shelf_life13)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo15")) {
-            const jsonData = localStorage.getItem("memo15");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message14").text(data.shelf_life14)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo16")) {
-            const jsonData = localStorage.getItem("memo16");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message15").text(data.shelf_life15)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo17")) {
-            const jsonData = localStorage.getItem("memo17");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message16").text(data.shelf_life16)
-            }, 3000);
-        };
-        if (localStorage.getItem("memo18")) {
-            const jsonData = localStorage.getItem("memo18");
-            console.log(jsonData);
-            const data = JSON.parse(jsonData);
-            console.log(data);
-            setTimeout(function () {
-                $("#message17").text(data.shelf_life17)
-            }, 3000);
-        };
 
 
 
