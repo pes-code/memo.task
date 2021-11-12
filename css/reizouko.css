@@ -11,19 +11,17 @@
 .icon_box_1{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_1 input{
     width: 50px;
     height: 50px;
 }
-.icon_box_1 button{
-    width: 50px;
-    height: 10px;
-}
 
 .icon_box_2{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_2 input{
     width: 50px;
@@ -33,6 +31,7 @@
 .icon_box_3{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_3 input{
     width: 50px;
@@ -42,6 +41,7 @@
 .icon_box_4{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_4 input{
     width: 50px;
@@ -51,6 +51,7 @@
 .icon_box_5{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_5 input{
     width: 50px;
@@ -60,6 +61,7 @@
 .icon_box_6{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .icon_box_6 input{
     width: 50px;
